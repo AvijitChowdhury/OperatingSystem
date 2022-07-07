@@ -1,0 +1,10 @@
+do {
+  // writer requests for critical section
+  wait(wrt);
+
+  // performs the write
+
+  // leaves the critical section
+  signal(wrt);
+
+} while (true);

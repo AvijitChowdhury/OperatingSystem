@@ -1,0 +1,7 @@
+wait(S) {
+  while (S <= 0)
+    ; // busy waiting
+  S--;
+}
+
+signal(S) { S++; }
