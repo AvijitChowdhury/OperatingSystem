@@ -1,0 +1,12 @@
+do {
+
+  wait(full);
+  wait(mutex);
+
+  // remove item from buffer
+
+  signal(mutex);
+  signal(empty);
+
+  // consumes item
+} while (true)
